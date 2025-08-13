@@ -3,7 +3,6 @@ package com.workintech.s18d4;
 import com.workintech.s18d4.entity.Account;
 import com.workintech.s18d4.entity.Address;
 import com.workintech.s18d4.entity.Customer;
-import com.workintech.s18d4.repository.AccountRepository;
 import com.workintech.s18d4.repository.AddressRepository;
 import com.workintech.s18d4.repository.CustomerRepository;
 import com.workintech.s18d4.service.AccountServiceImpl;
@@ -12,7 +11,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -20,6 +18,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.ActiveProfiles;
+import com.workintech.s18d4.repository.AccountRepository;
+
 
 import java.util.Arrays;
 import java.util.List;
